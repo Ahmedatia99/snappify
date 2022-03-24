@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Blinker:wght@100;200;300;400;600;700;800&family=Outfit:wght@100;200;400;500;600;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../css/all.css">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="css/plus.css">
+
+
+    <title>editor</title>
+</head>
+
+<body>
+    <div class="all">
+        <div class="top">
+            <div class="head">
+                <div class="logo">
+                    <a href="../index.html" target="blank">
+                        <img src="../image/logo.png">
+                        <h3>snappify</h3>
+                    </a>
+
+                </div>
+                <div class="theme">
+                    <!-- snaps -->
+                    <button type="button" class="uno"><svg viewBox="0 0 32 24" focusable="false"
+                            class="chakra-icon css-1c1bts6">
+                            <rect width="20" height="16" fill="#D6BCFA" rx="4" ry="4"></rect>
+                            <rect x="6" y="6" width="20" height="16" fill="#9F7AEA" rx="4" ry="4"></rect>
+                        </svg>Snaps</button>
+                    <!-- themes -->
+                    <button type="button" class="uno" id="popover-trigger-4" aria-haspopup="dialog"
+                        aria-expanded="false" aria-controls="popover-content-4"><svg viewBox="0 0 45 45"
+                            focusable="false" class="chakra-icon css-n41v3w">
+                            <g stroke="currentColor" stroke-width="0">
+                                <path
+                                    d="M6.00033 0.499924C4.54164 0.499924 3.14269 1.07939 2.11124 2.11084C1.07979 3.14229 0.500328 4.54123 0.500328 5.99992V36.2499C0.500328 38.438 1.36952 40.5364 2.9167 42.0836C4.46387 43.6307 6.56229 44.4999 8.75033 44.4999C10.9384 44.4999 13.0368 43.6307 14.584 42.0836C16.1311 40.5364 17.0003 38.438 17.0003 36.2499V5.99992C17.0003 4.54123 16.4209 3.14229 15.3894 2.11084C14.358 1.07939 12.959 0.499924 11.5003 0.499924H6.00033ZM8.75033 38.9999C9.47967 38.9999 10.1791 38.7102 10.6949 38.1945C11.2106 37.6787 11.5003 36.9793 11.5003 36.2499C11.5003 35.5206 11.2106 34.8211 10.6949 34.3054C10.1791 33.7897 9.47967 33.4999 8.75033 33.4999C8.02098 33.4999 7.32151 33.7897 6.80579 34.3054C6.29006 34.8211 6.00033 35.5206 6.00033 36.2499C6.00033 36.9793 6.29006 37.6787 6.80579 38.1945C7.32151 38.7102 8.02098 38.9999 8.75033 38.9999Z"
+                                    fill="#38A169" stroke="white" stroke-width="2" fill-rule="evenodd"
+                                    clip-rule="evenodd" transform="rotate(90) translate(27.5 -45)"></path>
+                                <path
+                                    d="M6.00033 0.499924C4.54164 0.499924 3.14269 1.07939 2.11124 2.11084C1.07979 3.14229 0.500328 4.54123 0.500328 5.99992V36.2499C0.500328 38.438 1.36952 40.5364 2.9167 42.0836C4.46387 43.6307 6.56229 44.4999 8.75033 44.4999C10.9384 44.4999 13.0368 43.6307 14.584 42.0836C16.1311 40.5364 17.0003 38.438 17.0003 36.2499V5.99992C17.0003 4.54123 16.4209 3.14229 15.3894 2.11084C14.358 1.07939 12.959 0.499924 11.5003 0.499924H6.00033ZM8.75033 38.9999C9.47967 38.9999 10.1791 38.7102 10.6949 38.1945C11.2106 37.6787 11.5003 36.9793 11.5003 36.2499C11.5003 35.5206 11.2106 34.8211 10.6949 34.3054C10.1791 33.7897 9.47967 33.4999 8.75033 33.4999C8.02098 33.4999 7.32151 33.7897 6.80579 34.3054C6.29006 34.8211 6.00033 35.5206 6.00033 36.2499C6.00033 36.9793 6.29006 37.6787 6.80579 38.1945C7.32151 38.7102 8.02098 38.9999 8.75033 38.9999Z"
+                                    fill="#F6AD55" fill-rule="evenodd" clip-rule="evenodd" stroke="white"
+                                    stroke-width="2" transform="rotate(45) translate(23.1 -16.8)"></path>
+                                <path
+                                    d="M6.00033 0.499924C4.54164 0.499924 3.14269 1.07939 2.11124 2.11084C1.07979 3.14229 0.500328 4.54123 0.500328 5.99992V36.2499C0.500328 38.438 1.36952 40.5364 2.9167 42.0836C4.46387 43.6307 6.56229 44.4999 8.75033 44.4999C10.9384 44.4999 13.0368 43.6307 14.584 42.0836C16.1311 40.5364 17.0003 38.438 17.0003 36.2499V5.99992C17.0003 4.54123 16.4209 3.14229 15.3894 2.11084C14.358 1.07939 12.959 0.499924 11.5003 0.499924H6.00033ZM8.75033 38.9999C9.47967 38.9999 10.1791 38.7102 10.6949 38.1945C11.2106 37.6787 11.5003 36.9793 11.5003 36.2499C11.5003 35.5206 11.2106 34.8211 10.6949 34.3054C10.1791 33.7897 9.47967 33.4999 8.75033 33.4999C8.02098 33.4999 7.32151 33.7897 6.80579 34.3054C6.29006 34.8211 6.00033 35.5206 6.00033 36.2499C6.00033 36.9793 6.29006 37.6787 6.80579 38.1945C7.32151 38.7102 8.02098 38.9999 8.75033 38.9999Z"
+                                    fill="#ED64A6" stroke="white" stroke-width="2" fill-rule="evenodd"
+                                    clip-rule="evenodd">
+                                </path>
+                            </g>
+                        </svg>Theme</button>
+
+                </div>
+                <div class="tools">
+                    <span>
+                        <button disabled="" type="button" class="chakra-button css-1lk7ck1">
+                            <div class="css-4bwcy0">
+                                <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 16 16"
+                                    focusable="false" class="chakra-icon css-13otjrl" height="1em" width="1em"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M2.5 4a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1zm2-.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0zm1 .5a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1z">
+                                    </path>
+                                    <path
+                                        d="M2 1a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2H2zm13 2v2H1V3a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1zM2 14a1 1 0 0 1-1-1V6h14v7a1 1 0 0 1-1 1H2z">
+                                    </path>
+                                </svg>
+                            </div>
+                        </button>
+
+
+                        <button><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 16 16"
+                                height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M1.5 2.5A1.5 1.5 0 0 1 3 1h10a1.5 1.5 0 0 1 1.5 1.5v3.563a2 2 0 0 1 0 3.874V13.5A1.5 1.5 0 0 1 13 15H3a1.5 1.5 0 0 1-1.5-1.5V9.937a2 2 0 0 1 0-3.874V2.5zm1 3.563a2 2 0 0 1 0 3.874V13.5a.5.5 0 0 0 .5.5h10a.5.5 0 0 0 .5-.5V9.937a2 2 0 0 1 0-3.874V2.5A.5.5 0 0 0 13 2H3a.5.5 0 0 0-.5.5v3.563zM2 7a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm12 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2z">
+                                </path>
+                                <path
+                                    d="M11.434 4H4.566L4.5 5.994h.386c.21-1.252.612-1.446 2.173-1.495l.343-.011v6.343c0 .537-.116.665-1.049.748V12h3.294v-.421c-.938-.083-1.054-.21-1.054-.748V4.488l.348.01c1.56.05 1.963.244 2.173 1.496h.386L11.434 4z">
+                                </path>
+                            </svg></button>
+
+
+                        <button disabled="" type="button" class="chakra-button css-1lk7ck1"><svg stroke="currentColor"
+                                fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="1em" width="1em"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <rect width="416" height="352" x="48" y="80" fill="none" stroke-linejoin="round"
+                                    stroke-width="32" rx="48" ry="48"></rect>
+                                <circle cx="336" cy="176" r="32" fill="none" stroke-miterlimit="10" stroke-width="32">
+                                </circle>
+                                <path fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"
+                                    d="M304 335.79l-90.66-90.49a32 32 0 00-43.87-1.3L48 352m176 80l123.34-123.34a32 32 0 0143.11-2L464 368">
+                                </path>
+                            </svg></button>
+
+
+                        <button disabled="" type="button" class="chakra-button css-1lk7ck1"><svg stroke="currentColor"
+                                fill="none" stroke-width="0" viewBox="0 0 24 24" height="1em" width="1em"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M16 9C16 11.2091 14.2091 13 12 13C9.79086 13 8 11.2091 8 9C8 6.79086 9.79086 5 12 5C14.2091 5 16 6.79086 16 9ZM14 9C14 10.1046 13.1046 11 12 11C10.8954 11 10 10.1046 10 9C10 7.89543 10.8954 7 12 7C13.1046 7 14 7.89543 14 9Z"
+                                    fill="currentColor"></path>
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M12 1C5.92487 1 1 5.92487 1 12C1 18.0751 5.92487 23 12 23C18.0751 23 23 18.0751 23 12C23 5.92487 18.0751 1 12 1ZM3 12C3 14.0902 3.71255 16.014 4.90798 17.5417C6.55245 15.3889 9.14627 14 12.0645 14C14.9448 14 17.5092 15.3531 19.1565 17.4583C20.313 15.9443 21 14.0524 21 12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12ZM12 21C9.84977 21 7.87565 20.2459 6.32767 18.9878C7.59352 17.1812 9.69106 16 12.0645 16C14.4084 16 16.4833 17.1521 17.7538 18.9209C16.1939 20.2191 14.1881 21 12 21Z"
+                                    fill="currentColor"></path>
+                            </svg></button>
+
+                        <button>
+                            <svg id="last" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <!--! Font Awesome Pro 6.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                                <path
+                                    d="M411.4 175.5C417.4 185.4 417.5 197.7 411.8 207.8C406.2 217.8 395.5 223.1 384 223.1H192C180.5 223.1 169.8 217.8 164.2 207.8C158.5 197.7 158.6 185.4 164.6 175.5L260.6 15.54C266.3 5.897 276.8 0 288 0C299.2 0 309.7 5.898 315.4 15.54L411.4 175.5zM288 312C288 289.9 305.9 272 328 272H472C494.1 272 512 289.9 512 312V456C512 478.1 494.1 496 472 496H328C305.9 496 288 478.1 288 456V312zM0 384C0 313.3 57.31 256 128 256C198.7 256 256 313.3 256 384C256 454.7 198.7 512 128 512C57.31 512 0 454.7 0 384z" />
+                            </svg>
+
+                        </button>
+                    </span>
+                </div>
+                <div class="first-btn">
+                    <button id="one"  type="submit" onclick="window.open('file.doc')">
+                        <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24"
+                            aria-hidden="true" focusable="false" height="1em" width="1em"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path d="M11 16h2V7h3l-4-5-4 5h3z"></path>
+                            <path
+                                d="M5 22h14c1.103 0 2-.897 2-2v-9c0-1.103-.897-2-2-2h-4v2h4v9H5v-9h4V9H5c-1.103 0-2 .897-2 2v9c0 1.103.897 2 2 2z">
+                            </path>
+                        </svg>
+                        Expert
+                    </button>
+                </div>
+            </div>
+
+            <div class="end-field">
+                <div class="first-component">
+                    <button id="two">
+                        ✨ Upgrade
+                    </button>
+                </div>
+                <div class="end-component">
+                    <button class="uno">
+                        <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 16 16"
+                            class="css-11l8nwy" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd"
+                                d="M10 5H9V4h1v1zM3 6H2v1h1V6zm5-2H7v1h1V4zM4 4H2v1h2V4zm8 7h2v-1h-2v1zM8 7h1V6H8v1zm-4 3H2v1h2v-1zm8-6h-1v1h1V4zm2 0h-1v1h1V4zm-2 5h2V6h-2v3zm4-6v9c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V3c0-.55.45-1 1-1h14c.55 0 1 .45 1 1zm-1 0H1v9h14V3zM6 7h1V6H6v1zm0-3H5v1h1V4zM4 7h1V6H4v1zm1 4h6v-1H5v1zm5-4h1V6h-1v1zM3 8H2v1h1V8zm5 0v1h1V8H8zM6 8v1h1V8H6zM5 8H4v1h1V8zm5 1h1V8h-1v1z">
+                            </path>
+                        </svg>
+                        Shortcuts
+                    </button>
+                    <!-- points -->
+                    <button class="uno due" type="button" icon="[object Object]" aria-label="Open menu"
+                        id="menu-button-26" aria-expanded="false" aria-haspopup="menu" aria-controls="menu-list-26">
+                        <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 16 16"
+                            class="css-eh0gyc" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z">
+                            </path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="down">
+            <!-- Grid Section(Left) -->
+            <div class="grid">
+                <div class="snapping-grid">
+                    <div class="turn">
+                        <h3 class="alone">snapping Grid</h3>
+                        <label class="switch">
+                            <input type="checkbox" id="check" checked>
+                            <span class="slider round"></span>
+                        </label>
+                    </div>
+                    <div class="size">
+                        <p>Grid Size</p>
+                        <input type="number" value="24">
+                    </div>
+
+                </div>
+                <hr>
+                <div class="element-grid">
+                    <div class="elements">
+                        <h3 class="alone">Elements</h3>
+                        <div class="pure">
+                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 22 22"
+                                height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M5.996 9c1.413 0 2.16-.747 2.705-1.293.49-.49.731-.707 1.292-.707s.802.217 1.292.707C11.83 8.253 12.577 9 13.991 9c1.415 0 2.163-.747 2.71-1.293.491-.49.732-.707 1.295-.707s.804.217 1.295.707C19.837 8.253 20.585 9 22 9V7c-.563 0-.804-.217-1.295-.707C20.159 5.747 19.411 5 17.996 5s-2.162.747-2.709 1.292c-.491.491-.731.708-1.296.708-.562 0-.802-.217-1.292-.707C12.154 5.747 11.407 5 9.993 5s-2.161.747-2.706 1.293c-.49.49-.73.707-1.291.707s-.801-.217-1.291-.707C4.16 5.747 3.413 5 2 5v2c.561 0 .801.217 1.291.707C3.836 8.253 4.583 9 5.996 9zm0 5c1.413 0 2.16-.747 2.705-1.293.49-.49.731-.707 1.292-.707s.802.217 1.292.707c.545.546 1.292 1.293 2.706 1.293 1.415 0 2.163-.747 2.71-1.293.491-.49.732-.707 1.295-.707s.804.217 1.295.707C19.837 13.253 20.585 14 22 14v-2c-.563 0-.804-.217-1.295-.707-.546-.546-1.294-1.293-2.709-1.293s-2.162.747-2.709 1.292c-.491.491-.731.708-1.296.708-.562 0-.802-.217-1.292-.707C12.154 10.747 11.407 10 9.993 10s-2.161.747-2.706 1.293c-.49.49-.73.707-1.291.707s-.801-.217-1.291-.707C4.16 10.747 3.413 10 2 10v2c.561 0 .801.217 1.291.707C3.836 13.253 4.583 14 5.996 14zm0 5c1.413 0 2.16-.747 2.705-1.293.49-.49.731-.707 1.292-.707s.802.217 1.292.707c.545.546 1.292 1.293 2.706 1.293 1.415 0 2.163-.747 2.71-1.293.491-.49.732-.707 1.295-.707s.804.217 1.295.707C19.837 18.253 20.585 19 22 19v-2c-.563 0-.804-.217-1.295-.707-.546-.546-1.294-1.293-2.709-1.293s-2.162.747-2.709 1.292c-.491.491-.731.708-1.296.708-.562 0-.802-.217-1.292-.707C12.154 15.747 11.407 15 9.993 15s-2.161.747-2.706 1.293c-.49.49-.73.707-1.291.707s-.801-.217-1.291-.707C4.16 15.747 3.413 15 2 15v2c.561 0 .801.217 1.291.707C3.836 18.253 4.583 19 5.996 19z">
+                                </path>
+                            </svg>
+                            <p>Watermark</p>
+                        </div>
+                        <div class="pure">
+                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512"
+                                focusable="false" class="code" height="1em" width="1em"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M190.4 354.1L91.9 256l98.4-98.1-30-29.9L32 256l128.4 128 30-29.9zm131.2 0L420 256l-98.4-98.1 30-29.9L480 256 351.6 384l-30-29.9z">
+                                </path>
+                            </svg>
+                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 16 16"
+                                focusable="false" class="chakra-icon css-13otjrl" height="1em" width="1em"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M2.5 4a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1zm2-.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0zm1 .5a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1z">
+                                </path>
+                                <path
+                                    d="M2 1a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2H2zm13 2v2H1V3a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1zM2 14a1 1 0 0 1-1-1V6h14v7a1 1 0 0 1-1 1H2z">
+                                </path>
+                            </svg>
+                            <p>Code editor</p>
+                        </div>
+                        <hr>
+                        <div class="pure">
+                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 22 22"
+                                height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M3 20h18a1 1 0 0 0 .864-1.504l-7-12c-.359-.615-1.369-.613-1.729 0L9.866 12.1l-1.02-1.632A.998.998 0 0 0 8 10h-.001a1 1 0 0 0-.847.47l-5 8A1 1 0 0 0 3 20zM14 8.985 19.259 18h-5.704l-2.486-3.987L14 8.985zm-5.999 3.9L11.197 18H4.805l3.196-5.115zM6 8c1.654 0 3-1.346 3-3S7.654 2 6 2 3 3.346 3 5s1.346 3 3 3zm0-4a1 1 0 1 1 0 2 1 1 0 0 1 0-2z">
+                                </path>
+                            </svg>
+                            <p>Background</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="content">
+                <div class="func">
+                    <div class="heading">
+                        <div class="points">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                        <div class="result">
+                            <button id="untitle"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 16 16" class="css-0" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M7.116 8l-4.558 4.558.884.884L8 8.884l4.558 4.558.884-.884L8.884 8l4.558-4.558-.884-.884L8 7.116 3.442 2.558l-.884.884L7.116 8z"></path></svg></button>
+                            <input type="text" placeholder="Untitled">
+                        </div>
+                    </div>
+                    <div class="input">
+                        <textarea type="text" placeholder="// Put Your Code Here"></textarea>
+                    </div>
+                </div>
+            </div>
+            <div class="background">
+                <h3>Background</h3>
+                <div class="width-height">
+                    <div class="width">
+                        <p>Width</p>
+                        <input type="number" value="1351">
+                    </div>
+                    <div class="height">
+                        <p>height</p>
+                        <input type="number" value="567">
+                    </div>
+                </div>
+                <div class="ratio">
+                    <div class="keep">
+                        <p>Keep Aspect Ratio</p>
+                        <label class="switch">
+                            <input type="checkbox" id="check" checked>
+                            <span class="slider round"></span>
+                        </label>
+                    </div>
+                    <div class="custom">
+                        <p>custom</p>
+                        <p>1:1</p>
+                        <p>16:9</p>
+                    </div>
+                    <div class="color">
+                        <p>color</p>
+                        <input type="color" value="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="edit.js"></script>
+</body>
+
+</html>
