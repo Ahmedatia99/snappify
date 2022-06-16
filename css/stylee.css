@@ -777,41 +777,55 @@ padding: 10px 25px;
   flex-direction: column;
   overflow-x: hidden;
 }
+.animation > div > div {
+  width: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.animation > div > div > img {
+  flex: 1
+}
+.animation > div > div:not(:last-child) {
+  margin-right: 20px;
+}
 .animation-1,
 .animation-2 {
+  width: 200%;
   display: flex;
-  flex-direction: row;
-  animation: main 50s linear infinite;
-  animation-direction: alternate;
+  height: 300px;
+  animation: main 10s linear infinite;
   margin-top: 20px;
 }
 .animation-2 {
-  animation: main-2 50s linear infinite;
-  animation-direction: alternate;
+  animation: main-2 10s linear infinite;
   margin-bottom: 30px;
 }
+
 @keyframes main {
   0% {
-    transform: translateX(-100px);
+    transform: translateX(0px)
   }
   50% {
-    transform: translateX(-400px);
+    transform: translateX(-300px)
   }
   100% {
-    transform: translateX(-100px);
+    transform: translateX(0px)
   }
 }
 @keyframes main-2 {
   0% {
-    transform: translateX(-400px);
+    transform: translateX(-300px)
   }
   50% {
-    transform: translateX(-100px);
+    transform: translateX(0px)
   }
   100% {
-    transform: translateX(-400px);
+    transform: translateX(-300px)
   }
 }
+
+
 .animation > h1 {
   text-align: center;
   margin: 20px auto;
@@ -822,7 +836,6 @@ padding: 10px 25px;
 .fourth,
 .fifth,
 .sixth {
-  margin-right: 20px;
   border-radius: 20px;
 }
 .first img,
