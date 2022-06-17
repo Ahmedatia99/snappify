@@ -1,0 +1,53 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: 'Cairo', sans-serif;
+}
+.content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.content .image {
+  display: flex;
+  align-items: center;
+}
+.content .image img {
+  width: 100px;
+  height: 80px;
+  margin-right: 20px;
+}
+.content .image span {
+  font-size: 24px;
+  font-weight: 700;
+}
+.dotted-loader {
+    width: 80px;
+    height: 80px;
+    border-width: 5px;
+    border-color: #252525;
+    border-style: solid solid solid dotted;
+    border-left-color: transparent;
+    border-radius: 50%;
+    margin-top: 30px;
+    /* position: absolute; */
+    animation: rotate-right 1s linear infinite
+}
+
+
+@keyframes rotate-right {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(1turn);
+  }
+}
+
