@@ -805,26 +805,28 @@ hr {
 
 @keyframes main {
   0% {
-    transform: translateX(0px);
+    transform: translateX(0px)
   }
   50% {
-    transform: translateX(-300px);
+    transform: translateX(-300px)
   }
   100% {
-    transform: translateX(0px);
+    transform: translateX(0px)
   }
 }
 @keyframes main-2 {
   0% {
-    transform: translateX(-300px);
+    transform: translateX(-300px)
   }
   50% {
-    transform: translateX(0px);
+    transform: translateX(0px)
   }
   100% {
-    transform: translateX(-300px);
+    transform: translateX(-300px)
   }
 }
+
+
 .animation > h1 {
   text-align: center;
   margin: 20px auto;
@@ -835,7 +837,6 @@ hr {
 .fourth,
 .fifth,
 .sixth {
-  margin-right: 20px;
   border-radius: 20px;
 }
 .first img,
