@@ -14,19 +14,19 @@ body {
 /* Small */
 @media (min-width: 768px) {
   .container {
-    width: 750px;
+    max-width: 750px;
   }
 }
 /* Medium */
 @media (min-width: 992px) {
   .container {
-    width: 970px;
+    max-width: 970px;
   }
 }
 /* Large */
 @media (min-width: 1200px) {
   .container {
-    width: 1170px;
+    max-width: 1170px;
   }
 }
 h1 {
@@ -805,27 +805,26 @@ hr {
 
 @keyframes main {
   0% {
-    transform: translateX(0px)
+    transform: translateX(0px);
   }
   50% {
-    transform: translateX(-300px)
+    transform: translateX(-300px);
   }
   100% {
-    transform: translateX(0px)
+    transform: translateX(0px);
   }
 }
 @keyframes main-2 {
   0% {
-    transform: translateX(-300px)
+    transform: translateX(-300px);
   }
   50% {
-    transform: translateX(0px)
+    transform: translateX(0px);
   }
   100% {
-    transform: translateX(-300px)
+    transform: translateX(-300px);
   }
 }
-
 
 .animation > h1 {
   text-align: center;
@@ -964,6 +963,7 @@ hr {
 /* price */
 .price {
   margin-bottom: 100px;
+  overflow: hidden;
 }
 .price .container {
   display: flex;
@@ -1081,6 +1081,7 @@ input:checked + .slider:before {
   position: relative;
   background-color: #fff;
   padding: 25px;
+  bottom: 10px;
 }
 .pro::before {
   content: '';
@@ -1215,13 +1216,12 @@ input:checked + .slider:before {
 }
 .email .container h1 {
   word-spacing: 5px;
-  margin-bottom: 20px;
   font-size: 42px;
 }
 .email .container > p {
   font-size: 25px;
-  margin-top: 20px;
   font-weight: 300;
+  margin: 20px 0;
 }
 .email .container > p > span {
   font-weight: 600;
@@ -1231,18 +1231,25 @@ input:checked + .slider:before {
   align-items: center;
 }
 .email .container .submit input {
+  font-size: 24px;
   width: 100%;
   padding: 10px 15px;
-  border: 2px solid #dddddd;
+  border: none;
   outline: none;
   border-radius: 7px;
   background-color: #fff;
   color: #000;
+  outline: 2px solid #2d79c1;
+  outline-offset: 2px;
+}
+.email .container .submit input::placeholder {
+  font-size: 18px;
+  opacity: 0.8;
 }
 .email .container .submit > button {
   color: #fff;
   background-color: #2d79c1;
-  padding: 10px 23px;
+  padding: 15px 30px;
   outline: none;
   border: none;
   margin-left: 15px;
@@ -1306,6 +1313,7 @@ input:checked + .slider:before {
 .mission .container .mission-content > p {
   font-size: 18px;
   font-weight: 400;
+  color: #848383;
 }
 .mission .container .mission-content > p:not(:last-child) {
   margin-bottom: 0;
@@ -1353,8 +1361,14 @@ input:checked + .slider:before {
   color: #fff;
 }
 
+.themes .container .themes-content > h1 {
+  margin-bottom: 10px;
+}
+
 .themes .container .themes-content > p {
   font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 10px;
 }
 .themes .container .themes-content > button {
   padding: 15px 40px;
